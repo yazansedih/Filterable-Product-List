@@ -14,19 +14,22 @@ function ProductList({ selectedCategory }) {
   );
 
   return (
-    <section id="product-display-area">
-      {filteredProducts.length > 0 ? (
-        filteredProducts.map((product, index) => (
-          <div className="product-item" key={index}>
-            <h3>{product.name}</h3>
-            <p>Category: {product.category}</p>
-            <p>Price: ${product.price}</p>
-          </div>
-        ))
-      ) : (
-        <p>No products found.</p>
-      )}
-    </section>
+    <>
+      <section id="product-display-area">
+        <h3>Product List</h3>
+        {filteredProducts.length > 0 ? (
+          filteredProducts.map((product, index) => (
+            <div className="product-item" key={index}>
+              <h3>{product.name}</h3>
+              <p>Category: {product.category}</p>
+              <p>Price: ${product.price}</p>
+            </div>
+          ))
+        ) : (
+          <p>No products found.</p>
+        )}
+      </section>
+    </>
   );
 }
 

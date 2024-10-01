@@ -1,7 +1,7 @@
 function Header() {
   return (
     <header>
-      <h1>ProductList</h1>
+      <h1>Filterable Product List</h1>
       {/* <nav>
         <ul>
           <li>
