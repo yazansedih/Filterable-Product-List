@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product List</h1>
+    </header>
+
+    <section id="filter-section">
+      <button onclick="filterProducts('All')">All</button>
+      <button onclick="filterProducts('Electronics')">Electronics</button>
+      <button onclick="filterProducts('Clothing')">Clothing</button>
+      <button onclick="filterProducts('Home')">Home</button>
+    </section>
+
+    <section id="product-display-area">
+      <!-- Products will be displayed here -->
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
